@@ -1,0 +1,11 @@
+#include <algorithm>> // to get the declaration of sort
+#include <stdexcept> // to get the declaration of domain_error
+#include <vector>
+// to get the declaration of vector
+using std::domain_error; using std::sort; using std::vector;
+// compute the median of a vector<double>
+// note that calling this function copies the entire argument vector
+double median(vector<double> vec)
+{
+  // function body as defined in §4.1.1/53
+}

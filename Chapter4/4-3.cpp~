@@ -1,0 +1,20 @@
+#include<iostream>
+#include<iomanip>
+#include<math.h>
+using std::cin;
+using std::cout;
+using std::endl;
+using std::setw;
+int main() {
+  for (int i=1; i<100; i++) {
+    const int max_input = 99;
+    int max_input_digit = floor(log10(max_input)) + 1;
+    const int max_output = max_input * max_input;
+    int max_output_digit = floor(log10(max_output)) + 1;
+    cout << setw(max_input_digit + 1) << i << setw(max_output_digit + 1) << i*i;
+    cout << endl;
+  }
+  return 0;
+}
+
+
